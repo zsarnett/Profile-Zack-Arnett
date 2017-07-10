@@ -1,4 +1,4 @@
-<!-- NAVIGATION BAR FOR www.wildcat-gaming.com -->
+<!-- NAVIGATION BAR FOR www.zackarnett.com -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,10 +35,24 @@
 
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" class="about-me-nav">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html" class="about-me-nav" id="about-me">About Me</a></li>
+        <li><a href="projects.html" id="projects">Projects</a></li>
+        <li><a href="resume.html" id="resume">Resume</a></li>
       </ul>
     </div>
   </div>
 </nav>
+<script type="text/javascript">
+  $(document).ready(function(){
+    let href = document.location.pathname.match(/[^\/]+$/)[0];
+    if(href == 'index.html'){
+      $('#about-me').addClass('active');
+    }
+    else if(href == 'projects.html'){
+      $('#projects').addClass('active');
+    }
+    else if(href == 'resume.html'){
+      $('#resume').addClass('active');
+    }
+  });
+</script>

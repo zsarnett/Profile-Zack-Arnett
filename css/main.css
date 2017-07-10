@@ -130,8 +130,7 @@ p {
 }
 .navbar.zack-nav li a:hover,
 .navbar.zack-nav li a:focus,
-.navbar.zack-nav li a.active,
-.navbar.zack-nav li a:active {
+.navbar.zack-nav li a.active{
     background: grey;
     color: white;
 }
