@@ -8,7 +8,7 @@
 </head>
 <script>
   let href = document.location.pathname.match(/[^\/]+$/)[0];
-  if(href== ('index.html')){
+  if(href== ('index.html') || document.location.pathname == 'localhost/Profile-zack-arnett/'){
     $('.nav-image').css('display', 'none');
   }
   else{
@@ -28,7 +28,7 @@
     </div>
 
     <a href="index.html" class="nav-image">
-      <img src="images/zack-arnett" alt="Picture of Zack Arnett">
+      <img src="images/zack-arnett.jpg" alt="Picture of Zack Arnett">
       <h3>Zack Arnett</h3></a>
 
     <div class="collapse navbar-collapse" id="myNavbar">
