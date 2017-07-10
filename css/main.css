@@ -130,6 +130,9 @@ p {
     display: inline-block;
     float: right;
   }
+  .about-me-nav {
+    margin-top: 39px;
+  }
 }
 .navbar.zack-nav .navbar-nav li a {
     padding: 21px 15px;
@@ -174,6 +177,13 @@ p {
   float: left;
   margin-left: 18px;
   color: grey;
+}
+
+.navbar-collapse.collapsing {
+  display: inline;
+}
+.navbar-collapse.collapse.in {
+  display: inline;
 }
 /* =================================================
                 Projects STYLE
