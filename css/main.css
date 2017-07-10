@@ -25,8 +25,7 @@ p {
   .home-page img {
     border-radius: 50%;
     width: 67%;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 20px;
     margin-left: 40%;
   }
 }
@@ -37,13 +36,13 @@ p {
   }
   .home-page img {
     border-radius: 50%;
-    width: 50%;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    width: 67%;
+    margin-top: 20px;
   }
 }
-.my-links  {
-  margin-top: 40px;
+.row.my-links  {
+  margin-left: 12.5%;
+  margin-right: 12,5%;
 }
 .skills h4, .skills ul {
   margin-left: 12.5%;
@@ -55,33 +54,22 @@ p {
   list-style: none;
   text-align: left;
 }
-.my-links-list > li.parent-item ul {
-  list-style: none;
-  left: 0;
-}
-.my-links-list li {
-  display: inline-block;
-}
-.my-links-list .parent-item li {
-  padding-right: 155px;
-  padding-bottom: 40px;
-}
 .my-links .fa {
   font-size: 2.5rem;
   color: grey;
   padding-right: 5px;
   transition: color .3s ease-in;
 }
-@media (max-width:991px) {
-  .my-links-list .parent-item li {
-    padding-right: 50%;
-    padding-bottom: 40px;
-  }
-}
 .my-links a {
   font-size: 20px;
   color: grey;
   transition: color .3s ease-in;
+}
+.my-links .item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .my-links a:hover {
   color: #0033A3;
