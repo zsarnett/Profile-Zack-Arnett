@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Character Set Encoding -->
+    <meta charset="utf-8">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+      $(document).ready(function(){
+        $("#header").load("nav.html");
+        $(".main-content").hide().fadeIn(1000);
+      });
+    </script>
+
+  </head>
+  <span id="header"></span>
+  <body>
+    <div class="space"></div>
+    <div class="container project-page main-content">
+      <h1>Projects</h1>
+      <hr>
+      <a href="https://github.com/zsarnett/LawlerDiscordBot"><h3>Lawler Discord Bot</h3></a>
+      <img src="images/discord-bot.gif" alt="Dicord bot in use">
+      <p>The Lawler Discord Bot is a C# .NET-Core Bot that uses the Discord API to send and receive messages.
+         Its intended to be for Lawler to use when he does't want to type out lengthy messages that he uses
+         frequently. The bot also connects to the Twitch API to check when Lawler is streaming and automatically
+         send a message with the stream title, game and link to the stream.</p> <br>
+      <a href="www.wildcat-gaming.com"><h3>Wildcat Gaming</h3></a>
+      <img src="images/wildcat-gaming.PNG" alt="wildcat gaming contact us page" width="75%">
+      <p>Wildcat Gaming is a business that I started with a friend that offers services in tech support, web development,
+         custom PC building and more. The web site was developed by my friend and I using github pages as our host and
+         point in with a CNAME file to the domain.</p>
+         <br>
+         <hr>
+     <div class="row my-links">
+       <ul class="my-links-list">
+         <li class="parent-item">
+           <ul>
+             <li><a href="mailto:arnett.zackary@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Email</a></li>
+             <li><a href="https://github.com/zsarnett"><i class="fa fa-github" aria-hidden="true"></i></i>Github</a></li>
+             <li><a href="https://www.linkedin.com/in/zackary-arnett/"><i class="fa fa-linkedin" aria-hidden="true"></i></i></i>LinkedIn</a></li>
+           </ul>
+           <ul>
+             <li><a href="https://bitbucket.org/zsarnett/"><i class="fa fa-bitbucket" aria-hidden="true"></i>Bitbucket</a></li>
+           </ul>
+         </li>
+       </ul>
+     </div>
+    </div>
+    <div class="space"></div>
+  </body>
+</html>

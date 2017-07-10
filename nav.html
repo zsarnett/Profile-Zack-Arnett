@@ -1,0 +1,42 @@
+<!-- NAVIGATION BAR FOR www.wildcat-gaming.com -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<script>
+  let href = document.location.pathname.match(/[^\/]+$/)[0];
+  if(href== ('index.html')){
+    $('.nav-image').css('display', 'none');
+  }
+  else{
+    $('.nav-image').hide().fadeIn(1000);
+  }
+</script>
+
+
+<nav class="navbar zack-nav navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle za-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <a href="index.html" class="nav-image">
+      <img src="images/zack-arnett" alt="Picture of Zack Arnett">
+      <h3>Zack Arnett</h3></a>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
