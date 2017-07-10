@@ -45,7 +45,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     let href = document.location.pathname.match(/[^\/]+$/)[0];
-    if(href == 'index.html'){
+    if(href == 'index.html' || location.pathname == '/'){
       $('#about-me').addClass('active');
     }
     else if(href == 'projects.html'){
