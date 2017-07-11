@@ -96,9 +96,6 @@ p {
     .nav ul {
       padding-right: 0px;
     }
-    .navbar.zack-nav li {
-      border-bottom: 1px solid #ffffff;
-    }
 }
 .navbar.zack-nav {
     background: white;
