@@ -7,8 +7,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <script>
-  let href = document.location.pathname.match(/[^\/]+$/)[0];
-  if(href== ('index.html') || document.location.pathname == 'localhost/Profile-zack-arnett/'){
+  let href = document.location.pathname.match(/[^\/]+$/);
+  if(document.location.pathname.match(/[^\/]+$/) == null || href[0] == ('index.html')){
     $('.nav-image').css('display', 'none');
   }
   else{
@@ -44,8 +44,8 @@
 </nav>
 <script type="text/javascript">
   $(document).ready(function(){
-    let href = document.location.pathname.match(/[^\/]+$/)[0];
-    if(href == 'index.html' || location.pathname == '/'){
+    let href = document.location.pathname.match(/[^\/]+$/);
+    if(href == null || href == 'index.html'){
       $('#about-me').addClass('active');
     }
     else if(href == 'projects.html'){
