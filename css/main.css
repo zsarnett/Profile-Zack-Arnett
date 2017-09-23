@@ -122,7 +122,7 @@ p {
     padding: 21px 15px;
     color: grey;
     font-size: 17px;
-    transition: background .3s linear;
+    transition: background .1s linear;
 }
 .navbar.zack-nav li a:hover,
 .navbar.zack-nav li a:focus,
