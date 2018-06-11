@@ -1,0 +1,195 @@
+/* =================================================
+                NAV STYLE
+================================================== */
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+i {
+    display: inline-block;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+#sidebar {
+    min-width: 15%;
+    max-width: 15%;
+    background: #3131ce;
+    color: #fff;
+    transition: all 0.3s;
+    height: 100vh;
+}
+#sidebar.active {
+    min-width: 5%;
+    max-width: 5%;
+    text-align: center;
+}
+
+#sidebar.active .sidebar-header h3 {
+    display: none;
+}
+
+#sidebar.active .sidebar-header strong {
+    display: block;
+}
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #3131ce;
+    border-bottom: 1px solid #ffffff;
+}
+#sidebar .sidebar-header img {
+  border-radius: 50%;
+  width: 45%;
+  margin-top: 15px;
+  margin-left: 27.5%;
+}
+#sidebar.active .sidebar-header img {
+  border-radius: 50%;
+  width: 100%;
+  margin-top: 7.5px;
+  margin-left: 0%;
+}
+#sidebar .sidebar-header h2 {
+  margin-top: 0;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+}
+#sidebar.active .sidebar-header h2 {
+  margin-top: 0;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+#sidebar .sidebar-header .active {
+  display: none;
+}
+#sidebar.active .sidebar-header .inactive {
+  display: none;
+}
+#sidebar .sidebar-header .inactive {
+  display: block;
+}
+#sidebar.active .sidebar-header .active {
+  display: block;
+}
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+#sidebar ul li a {
+    padding: 15px;
+    font-size: 1.7rem;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #383838;
+    background: #fff;
+}
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+#sidebar ul li.active > a{
+    color: #fff;
+    background: #383838;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #3131ce;
+}
+
+@media (max-width: 768px) {
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        font-size: 0.85em;
+    }
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+    #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+#sidebar ul.icons {
+  text-align: center;
+  border-bottom: none;
+}
+
+#sidebar ul.icons li{
+  display: inline-block;
+}
+#sidebar.active ul.icons li{
+  display: block;
+}
+#sidebar ul.icons li a:hover{
+  color: white;
+  background-color: inherit;
+}
+#sidebar ul.icons i {
+  font-size: 2.5rem;
+}
+#sidebar ul.icons i:hover {
+  color: #333;
+}
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}

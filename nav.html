@@ -5,54 +5,85 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/version2css.css">
 </head>
 <script>
-  let href = document.location.pathname.match(/[^\/]+$/);
-  if(document.location.pathname.match(/[^\/]+$/) == null || href[0] == ('index.html')){
-    $('.nav-image').css('display', 'none');
-  }
-  else{
-    $('.nav-image').hide().fadeIn(1000);
-  }
+  $(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+});
 </script>
 
-
-<nav class="navbar zack-nav navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle za-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div class="logo">
-      <a href="index.html" class="nav-image">
+<!-- <div class="wrapper"> -->
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+      <div class="sidebar-header">
+        <h2 class="name inactive">Zack Arnett</h2>
+        <h2 class="name active">ZA</h2>
         <img src="images/zack-arnett.jpg" alt="Picture of Zack Arnett">
-        <h3>Zack Arnett</h3></a>
-    </div>
+      </div>
 
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" class="about-me-nav" id="about-me">About Me</a></li>
-        <li><a href="projects.html" id="projects">Projects</a></li>
-        <li><a href="resume.html" id="resume">Resume</a></li>
+      <ul class="list-unstyled components">
+          <li id="about-me">
+              <a href="index.html">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  About Me
+              </a>
+          </li>
+          <li id="projects">
+              <a href="projects.html">
+                  <i class="fa fa-tasks" aria-hidden="true"></i>
+                  Projects
+              </a>
+          </li>
+          <li id="resume">
+              <a href="resume.html">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  Resume
+              </a>
+          </li>
       </ul>
-    </div>
-  </div>
-</nav>
+
+      <ul class="list-unstyled components icons">
+        <li>
+          <a href="#">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+
+      <!-- <div id="content">
+          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+              <i class="glyphicon glyphicon-align-left"></i>
+              Toggle Sidebar
+          </button>
+      <div> -->
+<!-- </div> -->
+
 <script type="text/javascript">
   $(document).ready(function(){
     let href = document.location.pathname.match(/[^\/]+$/);
+    console.log(href[0]);
     if(href == null || href == 'index.html'){
       $('#about-me').addClass('active');
     }
     else if(href == 'projects.html'){
       $('#projects').addClass('active');
     }
-    else if(href == 'resume.html'){
+    else if(href[0] == 'resume.html'){
       $('#resume').addClass('active');
+      console.log($('#resume'));
     }
   });
 </script>
